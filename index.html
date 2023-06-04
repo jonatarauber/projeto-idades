@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stilo.css">
+    <link rel="stylesheet" href="./responsivo.css">
+    <title>Modelo de exercício</title>
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section>
+        <div>
+          <p>Preencha os dados abaixo para ver o resultado</p>  
+          <p>Ano de nascimento:
+            <input type="number" name="anoNasc" id="anoNasc" min="0" maxlength="4" placeholder="Ano de nascimento" >
+          </p>
+            <p>Sexo
+                <input type="radio" name="sexo" id="mas" checked>
+                <label for="mas">Masculino</label>
+                <input type="radio" name="sexo" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
+            
+                <input name="botao" class="btn" type="button" value="Verificar" onclick="verificar()">
+    
+        </div>
+        <div id="res">
+            
+        </div>
+    </section>
+    <footer>
+        <p>&copy;<a href="https://github.com/jonatarauber?tab=repositories" target="_blank">Jônata</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
